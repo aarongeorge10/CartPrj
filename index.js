@@ -10,6 +10,8 @@ const products = [
     { id: 8, name: "Asian", price: 2809.00, image: 'assest/Asian.webp', description: "ASIAN Men THUNDER-07 Stylish Casual Mid Top Sneaker and Trendy Shoes with Laces for Men & Boys, Perfect, College, Parties and Outings, Lightweight, Comfortable, and Durable for All-Day Use" },
     { id: 9, name: "Bacca Bucci", price: 3809.00, image: 'assest/Bacca.jpg', description: "TRUE STREET STYLE CHUNKY DESIGN | FUNCTIONAL HI-TOP SNEAKERS | ANTI-COLLISION TOE & SHOCKING | NON-SLIP & BREATHABILITY | GOES WITH ALL DRESSES." },
     { id: 10, name: "Sparxs", price: 1409.00, image: 'assest/sparx.jpg', description: "Light up your style quotient with these trendy shoes from Sparx. Cushioned insole makes it very comfortable to wear all day long." },
+    { id: 11, name: "Converse", price: 4999.00, image: 'assest/converse.jpg', description: "Converse Chuck Taylor All Star Move Platform Hi Trainers. " },
+    { id: 12, name: "Crocs", price: 3699.00, image: 'assest/crocs.jpg', description: "Crocs Sandals For Men -men crocs-blue crocs for men-men sandals-Men Crocs Clogs Sandals Sandals for men-clogs for men clogs-new crocs men-men crocs-crocs-blue sandals-men sandals " },
 ];
 
 // Global DOM Elements
@@ -109,6 +111,7 @@ function addMultipleToCart(id, quantity) {
 // ----------------------------------------------------
 // DISPLAY FUNCTIONS
 // ----------------------------------------------------
+
 
 function updateCartDisplay() {
     // This function runs on both index.html (product listing) and product.html (single view)
