@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Product Details</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">SmartSole Store 🛍️</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+        </div>
+        <div class="nav-cart-icon">
+            <i class="fas fa-shopping-cart" id="cart-toggle-btn"></i>
+        </div>
+    </nav>
+    
+    <div class="content-container">
+        
+        <section class="product-detail-page" id="product-detail-page">
+            </section>
+
+        <aside class="cart-container" id="cart-aside"> 
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                <li class="empty-message">Your cart is empty.</li>
+            </ul>
+            
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-value">0.00</span></p>
+            </div>
+            
+            <button id="checkout-btn">Checkout</button>
+        </aside>
+    </div>
+    <div class="content-container">
+        
+        <section class="products-container" id="products-container">
+            <div class="product-card" data-id="1">
+                <h2>Adidas</h2>
+                <p class="price">2500.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-id="2">
+                <h2>Puma</h2>
+                <p class="price">1500.50</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-id="3">
+                <h2>Nike</h2>
+                <p class="price">3000.99</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="4">
+                <h2>Reebok</h2>
+                <p class="price">2599.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="5">
+                <h2>Asics</h2>
+                <p class="price">1599.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="6">
+                <h2>Anime</h2>
+                <p class="price">1999.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="7">
+                <h2>HRX</h2>
+                <p class="price">2799.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="8">
+                <h2>Asian</h2>
+                <p class="price">2809.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="9">
+                <h2>Bacca Bucci</h2>
+                <p class="price">3809.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="10">
+                <h2>Sparxs</h2>
+                <p class="price">1409.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="11">
+                <h2>Converse</h2>
+                <p class="price">4999.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="12">
+                <h2>Crocs</h2>
+                <p class="price">3699.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 SmartSole Store </p>
+        <p>Contact us at smartsole@ggml.in</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="product.js"></script> 
+</body>
+</html>
