@@ -344,3 +344,88 @@ header {
 }
 
 /* ============================================== */
+
+/* ... (Your existing CSS styles above this line) ... */
+
+/* ============================================== */
+/* NEW: PRODUCT DETAIL PAGE STYLES (for product.html) */
+/* ============================================== */
+
+.product-detail-page {
+    flex: 3;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.detail-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.detail-image {
+    width: 40%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.detail-info {
+    width: 60%;
+}
+
+.detail-info h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.detail-price {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.detail-description {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.purchase-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.qty-input {
+    width: 60px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.detail-add-btn {
+    padding: 10px 30px;
+    font-size: 1.1em;
+}
+
+.back-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #0056b3;
+}
+
