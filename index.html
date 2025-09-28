@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Shopping Cart</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="nav-brand">SmartSole Store 🛍️</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="nav-cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </nav>
+    
+
+    <header>
+        <h1>My SmartSole Store 🛒</h1>
+    </header>
+
+    <div class="content-container">
+        
+        <section class="products-container" id="products-container">
+            <div class="product-card" data-id="1">
+                <h2>Adidas</h2>
+                <p class="price">2500.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-id="2">
+                <h2>Puma</h2>
+                <p class="price">1500.50</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-id="3">
+                <h2>Nike</h2>
+                <p class="price">3000.99</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="4">
+                <h2>Reebok</h2>
+                <p class="price">2599.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="5">
+                <h2>Asics</h2>
+                <p class="price">1599.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="6">
+                <h2>Anime</h2>
+                <p class="price">1999.00</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+        </section>
+        
+        <aside class="cart-container">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                <li class="empty-message">Your cart is empty.</li>
+            </ul>
+            
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-value">0.00</span></p>
+            </div>
+            
+            <button id="checkout-btn">Checkout</button>
+        </aside>
+
+    </div>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body" class="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 SmartSole Store </p>
+        <p>Contact us at smartsole@ggml.in</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

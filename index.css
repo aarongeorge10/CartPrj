@@ -1,0 +1,346 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    /* Remove padding: 20px; from body to allow navbar/footer to span full width */
+}
+
+/* NEW/UPDATED: NAVBAR STYLES */
+/* ============================================== */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Make it sticky at the top */
+    top: 0;
+    z-index: 1000; /* Ensure it's above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-cart-icon i:hover {
+    color: #ffd700; /* Gold/Yellow on hover */
+}
+
+.nav-cart-icon i {
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Main Layout */
+.content-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px; /* Add padding here to bring content away from the edges */
+    max-width: 1200px; /* Optional: Center the content */
+    margin: 0 auto;
+}
+
+.products-container {
+    flex: 3; /* Takes up 3/4 of the space */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cart-container {
+    flex: 1; /* Takes up 1/4 of the space */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+/* Product Card Styles */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.product-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+.add-btn, #checkout-btn, .remove-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.add-btn:hover {
+    background-color: #218838;
+}
+
+#checkout-btn {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#checkout-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Cart Styles */
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
+
+.item-quantity {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+.cart-total {
+    border-top: 2px solid #ddd;
+    padding-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.empty-message {
+    text-align: center;
+    color: #999;
+    padding: 20px 0;
+}
+
+/* --- NEW STYLES FOR IMAGES --- */
+
+/* Style for images in the product listing */
+.product-image {
+    width: 100%; /* Make it span the width of the card */
+    max-height: 150px;
+    object-fit: contain; /* Ensure the image fits without cropping awkwardly */
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Style for images inside the cart */
+.cart-item-image {
+    width: 50px; 
+    height: 50px;
+    object-fit: cover; /* Crop to fill the small space */
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Adjust the cart item layout to accommodate the image */
+.cart-item {
+    display: flex;
+    align-items: center; /* Vertically center image and text */
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item-info {
+    flex-grow: 1; 
+    /* Prevent the info block from collapsing when image is added */
+}
+
+/* Adjust the remaining cart components */
+.quantity-controls {
+    margin-right: 10px; /* Adjust spacing since the image is now on the left */
+}
+
+
+/* ................................ */
+
+/* ... (Your existing CSS styles above this line) ... */
+
+/* ============================================== */
+/* NEW: MODAL STYLES */
+/* ============================================== */
+
+/* The Modal (Background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Sit on top of everything */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Close Button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Modal Body Layout */
+.modal-body {
+    padding-top: 10px;
+}
+
+.modal-detail-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.modal-product-image {
+    width: 45%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.modal-text {
+    width: 55%;
+}
+
+.modal-text h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.modal-price {
+    color: #28a745;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.modal-description {
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: #666;
+}
+
+.modal-add-btn {
+    width: 100%;
+    padding: 10px;
+}
+
+/* NEW: FOOTER STYLES */
+/* ============================================== */
+.footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #444;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* ============================================== */
