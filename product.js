@@ -1,7 +1,3 @@
-// This file only runs the rendering logic for the dedicated product page.
-// All helper functions (getProductById, formatCurrency, addMultipleToCart, updateCartDisplay)
-// are expected to be available from index.js which is loaded first.
-
 document.addEventListener('DOMContentLoaded', () => {
     // Check if we are actually on a page that needs product rendering (i.e., product.html)
     if (window.location.pathname.endsWith('product.html')) {
