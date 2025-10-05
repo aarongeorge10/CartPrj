@@ -107,7 +107,6 @@ function addMultipleToCart(id, quantity) {
     updateCartDisplay();
 }
 
-
 // ----------------------------------------------------
 // DISPLAY FUNCTIONS
 // ----------------------------------------------------
